@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Movies & series</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/home_stylejvcjbn.css'>
+    <style>
+        body
+        {
+            background-image: url(img/home_box.PNG);
+            margin: 0;
+            padding: 0;
+            }
+        .icon_box
+        {
+            position: absolute;
+            margin-top: 3px;
+            margin-left: 10px;
+            background-image: url(img/icon_box.PNG);
+            height: 90%;
+            border-radius: 40px;
+            padding: 10px;
+            width: 40PX;
+            z-index: 2;
+            position: fixed;
+            }
+        #img_home
+        {
+            padding-top: 5px;
+            text-align: center;
+            margin: 5px;
+            margin-left: 0px;
+            }
+        #img_netflix{
+            margin: 5px;
+            margin-top: 100px;
+            margin-left: 0px;
+            }
+        #home_box
+        {
+            margin-top: 0;
+            }
+        .series
+        {
+            color: white;
+            margin-left: 7.5%;
+            margin-top: 0;
+            font-family: cursive;
+            float: left;
+            margin-top: 3px;
+            padding: 0;
+            }
+        ul
+        {
+            list-style: none;
+            }
+        ul li
+        {
+            display:inline-block;
+            float: right;
+            padding: 15px;
+            padding-top: 7px;
+            }
+        h2
+        {
+            text-align: center;
+            padding-top: 150px;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 0 2px 2px rgba(0,0,0,.4);
+            color: white;
+            font-family: cursive;
+            }
+        p
+        {
+            text-align: center;
+            color: white;
+            font-family: cursive;
+            font-size: 1em;
+            font-weight: 400;
+            }
+        #strem_name
+        {
+            text-align: center;
+            margin-top: 55px;
+            font-size: 25px;
+            padding-top: 20px;
+            font-family: cursive;
+            color: white;
+            }
+        hr
+        {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 75%;
+            }
+        .div3
+        {
+            float: left;
+            margin: 5px;
+            text-align: center;
+            padding: 5px;
+            width: 148px;
+            color: white;
+            font-family: cursive;
+            }
+        #netflix_movies
+        {
+            margin-left: 7.5%;
+            }
+        #next_forward_more_arrow
+        {
+            padding-top: 75px;
+            }
+        .next_forward_more_arrow
+        {
+            float: left;
+            margin: 5px;
+            text-align: center;
+            padding: 5px;
+            width: 148px;
+            color: white;
+            font-family: cursive;
+            }
+        section
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+            float: left;
+            }
+        section .card
+        {
+            position: relative;
+            width: 148px;
+            height: 222px;
+            transform-style: preserve-3d;
+            float: left;
+            }
+        section .card .box
+        {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+            float: left;
+            }
+        section .card .box .img8x
+        {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            float: left;
+            }
+        section .card .box .img8x  img
+        {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            float: left;
+            }
+        section .card .box .contenBox
+        {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:url(img/home_box.PNG);
+            backface-visibility: hidden;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform: rotatey(180deg);
+            float: left;
+            }
+        section .card .box .contenBox div
+        {
+            transform-style: preserve-3d;
+            background:none;
+            transform: translateZ(100px);
+            float: left;
+            }
+        section .card .box .contenBox div h2
+        {
+            color: #fff;
+            font-size: 16px;
+            letter-spacing: 1px;
+            float: left;
+            }
+        section .card .box .contenBox div p
+        {
+            color: #fff;
+            font-size: 12px;
+            float: left;
+            }
+        section .card:hover .box
+        {
+            transform: rotatey(180deg);
+            float: left;
+            }
+        #netflix_movies_box
+        {
+            float: left;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            font-family: cursive;
+            }
+        a
+        {
+            text-decoration: none;
+            color: white;
+            }
+        #neflixseriesx
+        {
+            margin-top: 300px;
+            }
+        #AppleTVmoviesx
+        {
+            margin-top: 50px;
+            }
+        #Nickelodeonmoviesx
+        {
+            margin-top: 50px;
+            }
+        #USANetwork_movies
+        {
+            margin-top: 50px;
+            margin-left: 7.5%;
+            }
+        #hbomoviesx
+        {
+            margin-top: 50px;
+            }
+    </style>
+    <script src='main.js'></script>
+    <link rel="icon" href="img/series_icon.png" sizes="48x48">
+</head>
+<body>
+    <div class="icon_box">
+        <a href="#home_box">
+            <img src="img/home.png" width="35" height="35" id="img_home">
+        </a>
+        <a href="#netflix_bart">
+            <img src="img/Netflix.png" width="35" height="35" id="img_netflix">
+        </a>
+        <a href="#AppleTV+_bart">
+            <img src="https://tv.apple.com/assets/brands/Apple_TV_logo_white-0858c5e011bae390c9cfb0252ef15dd6.svg" width="35" height="35" id="img_home">
+        </a>
+        <a href="#Nickelodeon_box">
+            <img src="img/Nickelodeon.png" width="35" height="35" id="img_home">
+        </a>
+        <a href="#USANetwork_box">
+            <img src="img/USA Network.png" width="45" height="25" id="img_home">
+        </a>
+        <a href="#hbo_box">
+            <img src="img/HBO.png" width="45" height="25" id="img_home">
+        </a>
+    </div>
+    <div id="home_box">
+        <a href="">
+            <h1 class="series">
+                Movies & series
+            </h1>
+        </a>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="img/person.png" width="25px" height="25px">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/notification.png" width="25px" height="25px">
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="img/search.png" width="25px" height="25px">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div >
+        <h2>
+            Download Movies & Series: HD smallest size
+        </h2>
+        <p>
+            Here you can browse and download Movies & Series  in excellent 720p, 1080p, 2160p 4K quality,<br> all at the smallest file size.
+        </p>
+    </div>
+    <hr>
+    <div id="netflix_bart">
+        <div id="neflixmoviesx">
+            <h3 id="strem_name">
+                Netflix  Movies
+            </h3>
+            <div id="netflix_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Movies/Extraction.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he's enlisted to rescue the kidnapped son of an imprisoned international crime lord.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Extraction
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Movies/Klaus.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A simple act of kindness always sparks another, even in a frozen, faraway place. When Smeerensburg's new postman, Jesper, befriends toymaker Klaus, their gifts melt an age-old feud and deliver a sleigh full of holiday traditions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Klaus
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Movies/Marriage Story.jpg" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Noah Baumbach's incisive and compassionate look at a marriage breaking up and a family staying together.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Marriage Story
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Movies/The Irishman.jpg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>An old man recalls his time painting houses for his friend, Jimmy Hoffa, through the 1950-70s.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Irishman
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Movies/The King.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Hal, wayward prince and heir to the English throne, is crowned King Henry V after his tyrannical father dies. Now the young king must navigate palace politics, the war his father left behind, and the emotional strings of his past life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The King
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Movies/The Old Guard.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A covert team of immortal mercenaries is suddenly exposed and must now fight to keep their identity a secret just as an unexpected new member is discovered.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Old Guard
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="neflixseriesx">
+            <h3 id="strem_name">
+                Netflix  Series
+            </h3>
+            <div id="netflix_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Series/Black Mirror.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Black Mirror
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Series/Dark.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A family saga with a supernatural twist, set in a German town, where the disappearance of two young children exposes the relationships among four families.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Dark
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Series/House of Cards.png" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        House of Cards
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Series/La casa de papel.jpeg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        La casa de papel
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Series/Ozark.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder money to appease a drug boss.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Ozark
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Netflix/Series/When They See Us.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Five teens from Harlem become trapped in a nightmare when they're falsely accused of a brutal attack in Central Park. Based on the true story.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        When They See Us
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="AppleTV+_bart">
+        <div id="AppleTVmoviesx">
+            <h3 id="strem_name">
+                Apple TV+ Movies
+            </h3>
+            <div id="netflix_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Movie/Dads.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Director Bryce Dallas Howard teams up with her father, Ron Howard, to explore contemporary fatherhood through anecdotes and wisdom from famous funnymen such as Will Smith, Jimmy Fallon, Neil Patrick Harris, and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Dads
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Movie/Greyhound.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Several months after the U.S. entry into World War II, an inexperienced U.S. Navy commander must lead an Allied convoy being stalked by a German submarine wolf pack.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Greyhound
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Movie/Hala.jpg" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Muslim teenager Hala copes with the unraveling of her family as she comes into her own.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Hala
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Movie/The Banker.jpg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>In the 1960s two African-American entrepreneurs hire a working-class white man to pretend to be the head of their business empire while they pose as a janitor and chauffeur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Banker
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Movie/The Elephant Queen.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Athena is a mother who will do everything in her power to protect her herd when they are forced to leave their waterhole. This epic journey, narrated by Chiwetel Ejiofor, takes audiences across the African savannah, and into the heart of an elephant family. A tale of love, loss and coming home.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Elephant Queen
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Movie/Wolfwalkers.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A young apprentice hunter and her father journey to Ireland to help wipe out the last wolf pack. But everything changes when she befriends a free-spirited girl from a mysterious tribe rumored to transform into wolves by night.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Wolfwalkers
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="neflixseriesx">
+            <h3 id="strem_name">
+                Apple TV+ Series
+            </h3>
+            <div id="netflix_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Series/Defending Jacob.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>The limited drama series is a gripping, character-driven thriller based on the 2012 New York Times best selling novel of the same name by William Landay. An assistant DA's world is shattered when his beloved son gets charged with murder.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Defending Jacob
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Series/Dickinson.png" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>An inside look at the world of writer Emily Dickinson.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Dickinson
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Series/Home Before Dark.png" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A young girl from the big city uncovers clues to an unsolved cold case while visiting her father's small lakeside town.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Home Before Dark
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Series/Mythic Quest Raven's Banquet.png" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>The owner of a successful video game design company and his troubled staff struggle to keep their hit game 'Mythic Quest' on top.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Mythic Quest <br> Raven's Banquet
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Series/See.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Far in a dystopian future, the human race has lost the sense of sight, and society has had to find new ways to interact, build, hunt, and to survive. All of that is challenged when a set of twins is born with sight.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        SEE
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Apple TV+/Series/The Morning Show.png" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Morning Show
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Nickelodeon_box">
+        <div id="Nickelodeonmoviesx">
+            <h3 id="strem_name">
+                Nickelodeon Movies
+            </h3>
+            <div id="netflix_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Movies/A Fairly Odd Movie Grow Up Timmy Turner.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Timmy turns 23 and his godparents are fighting to keep him, while Crocker is still up to his nefarious schemes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        A Fairly Odd <br>Movie Grow Up <br>Timmy Turner
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Movies/Batman vs. Teenage Mutant Ninja Turtles.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Batman, Batgirl and Robin forge an alliance with The Teenage Mutant Ninja Turtles to fight against the Turtles' sworn enemy, The Shredder, who has teamed up with Ra's Al Ghul and The League Of Assassins.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Batman vs. Teenage<br> Mutant Ninja Turtles
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Movies/Channel Chasers.jpg" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>10 year old Timmy Turner gets punished for destroying Dimmsdale with a machine known as "The Kid Crusher" from his favorite T.V. show, "Maho Mushi". After being humiliated by his dim-witted...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Channel Chasers
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Movies/Escape from Mr. Lemoncello's Library.jpg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Can twelve 12-year-olds escape from the most ridiculously brilliant library ever created? Escape from Mr. Lemoncello's Library plunks a dozen sixth-graders into the middle of a futuristic ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Escape from Mr.<br> Lemoncello's Library
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Movies/Hey Arnold! The Jungle Movie.png" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Picking up where Hey Arnold! (1996) left off, this tells the story of what happened to Arnold's parents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Hey Arnold!<br> The Jungle Movie
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Movies/Legends of the Hidden Temple.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Three siblings who break away from a lacklustre temple tour in a jungle find themselves immersed in a real-life mission comprised of obstacles that they must complete in order to escape alive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Legends of the <br>Hidden Temple
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="neflixseriesx">
+            <h3 id="strem_name">
+                Nickelodeon Series
+            </h3>
+            <div id="netflix_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Series/Avatar The Last Airbender.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Avatar The Last <br> Airbende
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Series/CatDog.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>The comic misadventures of a tidy, refined Cat and a goofy, uncouth Dog joined at the abdomen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        CatDog
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Series/Monsters vs. Aliens.jpg" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A woman transformed into a giant after she is struck by a meteorite on her wedding day becomes part of a team of monsters sent in by the U.S. government to defeat an alien mastermind trying to take over Earth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Monsters vs. Aliens
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Series/SpongeBob SquarePants.jpg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>The misadventures of a talking sea sponge who works at a fast food restaurant, attends a boating school, and lives in an underwater pineapple.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        SpongeBob <br> SquarePants
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Series/The Legend of Korra.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Legend of Korra
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/Nickelodeon/Series/The Penguins of Madagascar.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Penguins of<br> Madagascar
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="USANetwork_box">
+        <div id="Nickelodeonmoviesx">
+            <h3 id="strem_name">
+                USA Network Series
+            </h3>
+            <div id="USANetwork_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/USA Network/Dirty John.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Anthology series in which each season is based on a true crime story featuring an epic tale of love gone wrong.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Dirty John
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/USA Network/Mr. Robot.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Elliot, a brilliant but highly unstable young cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global dominance when he and his shadowy allies try to take down the corrupt corporation he works for.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Mr. Robot
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/USA Network/Pearson.jpg" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Attorney Jessica Pearson enters the complex and seedy world of Chicago politics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Pearson
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/USA Network/Suits.jpg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>On the run from a drug deal gone bad, brilliant college dropout Mike Ross, finds himself working with Harvey Specter, one of New York City's best lawyers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Suits
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/USA Network/The Sinner.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Anthology series that examines how and why ordinary people commit brutal crimes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Sinner
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/USA Network/White Collar.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>A white-collar criminal agrees to help the FBI catch other white-collar criminals using his expertise as an art and securities thief, counterfeiter, and conman.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        White Collar
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <hr>
+    <div id="hbo_box">
+        <div id="hbomoviesx">
+            <h3 id="strem_name">
+                HBO Series
+            </h3>
+            <div id="USANetwork_movies">
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/hbo/Band of Brothers.jpg" alt="Inception"  width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Band of Brothers
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/hbo/Chernobyl.jpg" alt="Mad Max Fury Road" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Chernobyl
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/hbo/Game of Thrones.jpg" alt="Monster" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Game of Thrones
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/hbo/The Wire.jpg" alt="The Fault in Our Stars" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        The Wire
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG/hbo/Watchmen.jpg" alt="The King" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Set in an alternate history where masked vigilantes are treated as outlaws, Watchmen embraces the nostalgia of the original groundbreaking graphic novel of the same name, while attempting to break new ground of its own.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Watchmen
+                    </a>
+                </div>
+                <div id="netflix_movies_box">
+                    <section>
+                        <div class="card">
+                            <div class="box">
+                                <div class="img8x">
+                                    <div class="div3">
+                                        <img src="IMG//hbo/Westworld.jpg" alt="The Revenan" width="148" height="222">
+                                    </div>
+                                </div>
+                                <div class="contenBox">
+                                    <div>
+                                        <p>Set at the intersection of the near future and the reimagined past, explore a world in which every human appetite can be indulged without consequence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="">
+                        Westworld
+                    </a>
+                </div>
+                <div class="next_forward_more_arrow">
+                    <a href="">
+                        <img src="IMG/next_forward_more_arrow.png" alt="The Revenan" width="50" height="50" id="next_forward_more_arrow">
+                    </a>
+                    <br>
+                    For More
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
